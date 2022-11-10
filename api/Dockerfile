@@ -1,3 +1,6 @@
-FROM node
+FROM node:alpine
 EXPOSE 5000
-CMD ["node", "-v"]
+WORKDIR /api
+COPY . .
+RUN ["npm", "install"]
+CMD ["node", "index.js"]

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://192.168.0.121";
+const API_URL = "htpp://localhost:5000";
 
 export const userCreate = (username, displayName, password, email) => {
   return new Promise(async (resolve, reject) => {

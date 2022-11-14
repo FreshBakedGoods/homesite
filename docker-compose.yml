@@ -6,6 +6,7 @@ services:
     environment:
       POSTGRES_USER: dbadmin
       POSTGRES_PASSWORD: admin
+      POSTGRES_DB: api
     volumes:
       - ./create_database.sql:/docker-entrypoint-initdb.d/create_database.sql
   adminer:
